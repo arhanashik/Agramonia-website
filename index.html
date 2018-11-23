@@ -15,9 +15,43 @@
 </head>
 
 
-<body>	<!-- Wrapper -->
-	<div id="wrapper">
+<body class="side-panel side-panel-push">	<!-- Wrapper -->
 
+    <!-- Side Panel -->
+    <div id="side-panel" class="text-center">
+        <div id="close-panel">
+            <i class="fa fa-close"></i>
+        </div>
+
+        <div class="side-panel-wrap">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+
+
+            <!--Navigation-->
+            <div id="mainMenu" class="menu-onclick menu-vertical">
+                <div class="container">
+                   <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                             <li><a href="farmers.html">Farmers</a></li>
+                             <li><a href="book_now.html">Visit Us</a></li>
+                             <li><a href="#">Guest house</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--end: Navigation-->
+
+           
+        </div>
+
+    </div>
+    <!-- end: Side Panel -->
+
+
+	<div id="wrapper">
 		 <!-- Topbar -->
         <div id="topbar" class="topbar-transparent topbar-fullwidth dark visible-md visible-lg">
             <div class="container">
@@ -44,8 +78,16 @@
         <!-- Header -->
         <header id="header" class="header-fullwidth header-transparent dark">
 			<div id="header-wrap">
-				<div class="container"> <!--Logo-->
+				<div class="container"> 
+
+                    <!--Logo-->
 					<div id="logo">
+                        <!--side panel-->
+                                <a id="side-panel-trigger" href="#" class="toggle-item" data-target="body" data-class="side-panel-active">
+                                    <i class="fa fa-bars"></i>
+                                    <i class="fa fa-close"></i>
+                                </a>
+                                <!--end: side panel-->
 						<a href="#" class="logo" data-dark-logo="images/logo-dark.png">
 							<img src="images/logo.png" alt="Logo">
 						</a>
@@ -88,7 +130,7 @@
                                     <li class="current"><a href="index.html">Home</a></li>
                                     <li><a href="farmers.html">Farmers</a></li>
                                     <li><a href="book_now.html">Visit Us</a></li>
-                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Guest house</a></li>
                                 </ul>
                             </nav>
                         </div> 
@@ -99,20 +141,38 @@
 		</header>
 		<!-- end: Header -->
     
-<!-- SECTION VIDEO BACKGROUND -->
-<section id="slider" class="section-video fullscreen text-light background-overlay" data-vide-bg="video/for-benny/for-benny" data-vide-options="position: 0% 50%">
-    <div class="container container-fullscreen">
-        <div class="text-middle text-center text-light">
-            <h2 class="font-weight-800">Lorem ipsum dolor sit amet</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <!-- SECTION IMAGE FULLSCREEN -->
+        <section id="slider" class="fullscreen background-overlay youtube-background" data-youtube-url="https://www.youtube.com/watch?v=FIVE7E2kQyY" data-youtube-autoplay="true" data-youtube-autopause="true">
+            <div class="container-fluid">
+                <div class="container-fullscreen">
+                    <div class="text-middle text-center text-light">
+                                           
+                        <h2 class="font-weight-800">Lorem ipsum dolor sit amet</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                         <button id="youtube-background-controls">
+                            <i class="fa fa-play fa-4x"></i>
+                            <i class="fa fa-pause fa-4x"></i>
+                        </button>   
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+        <!-- end: SECTION IMAGE FULLSCREEN -->
+
+        <div class="call-to-action call-to-action-dark m-b-0" style="background-color: #bee9fa">
+            <div class="container">
+                <img src="images/home_icons.png" alt=""/>
+            </div>
         </div>
 
-    </div>
-</section>
-<!-- end: SECTION VIDEO BACKGROUND -->
 
-   
-   <!-- SECTION DETAILS -->
+        <div class="home_bg"> <!--Home bg-->
+          <div class="overlay"></div>  
+
+        <!-- SECTION DETAILS -->
         <section class="p-t-150 p-b-100">
             <div class="container">
                 <div class="row">                    
@@ -133,7 +193,7 @@
 
                     <div class="col-md-6 m-b-30">
                         <div class="image-absolute" data-animation="fadeInLeft" data-animation-delay="800">
-                             <img src="images/1.jpg" alt="#">
+                             <img src="images/agromonia.jpg" alt="#">
                         </div>
                     </div>
 
@@ -143,16 +203,16 @@
             </div>
 
         </section>
-    <!-- SECTION DETAILS -->
+       <!-- SECTION DETAILS -->
 
 
     <!-- SECTION DETAILS -->
-        <section class="p-t-150 p-b-100">
+        <section class="p-t-50 p-b-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 m-b-30">
                         <div class="image-absolute" data-animation="fadeInLeft" data-animation-delay="800">
-                             <img src="images/1.jpg" alt="#">
+                             <img src="images/about_us.jpg" alt="#">
                         </div>
                     </div>
 
@@ -209,13 +269,17 @@
       </div>
       </div>
     </div>
-    <div class="copyright-content">
-      Background
-    </div>
+    <div class="copyright-content"></div>
   </footer>
   <!-- end: Footer -->
 
-</div>    <!-- end: Wrapper -->
+
+        </div> <!--End Home bg-->
+
+   
+        
+
+     </div>    <!-- end: Wrapper -->
 
     <!-- Go to top button -->
     <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a>
