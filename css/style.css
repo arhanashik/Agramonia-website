@@ -835,6 +835,7 @@ border-top: 1px solid $light;
   #header.header-sticky.dark #header-wrap {
     background-color: #252525 !important; }
   #header.dark {
+     background-color: #fff;
     /*Main Menu*/ }
     #header.dark #header-wrap {
       background-color: #252525;
@@ -846,7 +847,7 @@ border-top: 1px solid $light;
     #header.dark #mainMenu nav > ul > li:before {
       color: #9d9d9d; }
     #header.dark #mainMenu nav > ul > li > a {
-      color: #ffffff; }
+      /*color: #ffffff;*/ }
       #header.dark #mainMenu nav > ul > li > a .menu-sub-title {
         color: #eeeeee; }
     #header.dark #mainMenu nav > ul > li.current > a:after, #header.dark #mainMenu nav > ul > li:hover > a:after, #header.dark #mainMenu nav > ul > li:focus > a:after {
@@ -3816,14 +3817,17 @@ Page Menu
 .text-center.social-icons ul {
   display: inline-block; }
 
+  .social-icons img {
+  height: 16px; }
+
 .social-icons li {
   float: left;
   list-style: none; }
 
 .social-icons li a {
   float: left;
-  height: 32px;
-  width: 32px;
+  height: 16px;
+  width: 16px;
   line-height: 32px;
   font-size: 16px;
   text-align: center;
@@ -3851,19 +3855,19 @@ Page Menu
 
 .social-icons.social-icons-colored .social-facebook a,
 .social-icons.social-icons-colored-hover .social-facebook a:hover {
-  background-color: #5d82d1; }
+  background-color: transparent; }
 
 .social-icons.social-icons-colored .social-twitter a,
 .social-icons.social-icons-colored-hover .social-twitter a:hover {
-  background-color: #40bff5; }
+  background-color: transparent; }
 
 .social-icons.social-icons-colored .social-vimeo a,
 .social-icons.social-icons-colored-hover .social-vimeo a:hover {
-  background-color: #35c6ea; }
+  background-color: transparent; }
 
 .social-icons.social-icons-colored .social-myspace a,
 .social-icons.social-icons-colored-hover .social-myspace a:hover {
-  background-color: #008dde; }
+  background-color: transparent; }
 
 .social-icons.social-icons-colored .social-youtube a,
 .social-icons.social-icons-colored-hover .social-youtube a:hover {
@@ -3871,7 +3875,7 @@ Page Menu
 
 .social-icons.social-icons-colored .social-instagram a,
 .social-icons.social-icons-colored-hover .social-instagram a:hover {
-  background-color: #548bb6; }
+  background-color: transparent; }
 
 .social-icons.social-icons-colored .social-gplus a,
 .social-icons.social-icons-colored-hover .social-gplus a:hover {
@@ -7779,8 +7783,6 @@ transform: translateZ(0px);
   #footer.background-grey .footer-logo {
     border-right: 1px solid #ccc; }
 
-.footer-content {
-  padding: 60px 0 40px 0; }
 
 .copyright-content {
     min-height: 128px;
@@ -8203,6 +8205,114 @@ body.device-xs .col-md-3 .flickr-widget img {
 
 /*# sourceMappingURL=colors.css.map */
 
+
+/* ----------------------------------------------------------------------
+    Clients Logo
+-------------------------------------------------------------------------*/
+.grid li {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 0.8; }
+
+.clients-carousel a {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  opacity: 0.8; }
+  .clients-carousel a img {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    opacity: 0.8; }
+
+.parallax .clients-carousel a {
+  opacity: 1; }
+
+.grid li:hover {
+  opacity: 1;
+  cursor: pointer; }
+
+.clients-carousel a:hover {
+  opacity: 1;
+  cursor: pointer; }
+  .clients-carousel a:hover img {
+    opacity: 1;
+    cursor: pointer; }
+
+.client-carousel .owl-item img, .clients-logo .owl-item img {
+  padding: 20px; }
+
+.grid {
+  padding: 0;
+  list-style: none;
+  overflow: hidden; }
+  .grid li {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding: 20px; }
+  .grid.grid-2-columns li, .grid.grid-2-columns figure {
+    width: 50%; }
+  .grid.grid-3-columns li, .grid.grid-3-columns figure {
+    width: 33.333333%; }
+  .grid.grid-4-columns li, .grid.grid-4-columns figure {
+    width: 25%; }
+  .grid.grid-5-columns li, .grid.grid-5-columns figure {
+    width: 20%; }
+  .grid.grid-6-columns li, .grid.grid-6-columns figure {
+    width: 16.6666666%; }
+  .grid li:hover {
+    cursor: pointer;
+    background-color: #f8f8f8; }
+  .grid li a, .grid li img {
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+  .grid li a img {
+    width: 100%; }
+  .grid li:before, .grid li:after {
+    content: '';
+    position: absolute; }
+  .grid li:before {
+    height: 100%;
+    top: 0;
+    left: -1px;
+    border-left: 1px solid #eee; }
+  .grid li:after {
+    width: 100%;
+    height: 0;
+    top: auto;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 1px solid #eee; }
+  .grid.clients-grey {
+    border: 1px solid #ddd; }
+    .grid.clients-grey li {
+      background-color: #eee; }
+      .grid.clients-grey li:before {
+        border-left: 1px solid #ccc; }
+      .grid.clients-grey li:after {
+        border-bottom: 1px solid #ccc; }
+  .grid.clients-border {
+    border-width: 10px; }
+
+/*client options*/
+/*carousel logo*/
+.carousel-description-clients .carousel {
+  margin-top: 40px; }
+.carousel-description-clients .owl-prev, .carousel-description-clients .owl-next {
+  margin-top: -40px !important; }
+
+/*Clients Responsive li*/
+body.device-sm .carousel-description-clients .owl-controls, body.device-xs .carousel-description-clients .owl-controls, body.device-xxs .carousel-description-clients .owl-controls {
+  display: none; }
+body.device-sm .grid li, body.device-xs .grid li {
+  width: 33.33%; }
+body.device-xxs .grid li {
+  width: 50%; }
+
+
+
+
 .home_bg {
     position: relative;
     width: 100%;
@@ -8222,7 +8332,7 @@ body.device-xs .col-md-3 .flickr-widget img {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('../images/home_bg.jpg');
+    background-image: url('../images/farmer_bg.jpg');
     background-repeat: no-repeat;
     background-position: 0 top;
     -ms-background-size: cover;
@@ -8237,7 +8347,7 @@ body.device-xs .col-md-3 .flickr-widget img {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('../images/farmer_bg.jpg');
+    background-image: url('../images/visit_bg.jpg');
     background-repeat: no-repeat;
     background-position: 0 top;
     -ms-background-size: cover;
@@ -8353,3 +8463,8 @@ blockquote p {
     font-size: 22px;
 }
 
+.header-extras.flag img {
+
+    height: 25px;
+
+}
